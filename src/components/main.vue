@@ -1,5 +1,8 @@
 <template>
-<h1>{{msg}}</h1>
+<div class='container-fluid'>
+  <h1>{{msg}}</h1>
+  <button type="button" class="btn btn-primary">Primary</button>
+</div>
 </template>
 
 <script lang="ts">

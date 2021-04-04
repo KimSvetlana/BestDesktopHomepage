@@ -8,6 +8,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import Main from './components/main.vue'
+// import bootstrap from 'bootstrap'
 
 @Component({
   components: {
