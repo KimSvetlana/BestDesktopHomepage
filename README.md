@@ -1,2 +1,2 @@
 # BestDesktopHomepage
-  Первое задание Smart Академия
+  Первое задание в Smart Академии.
