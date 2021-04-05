@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
     <Main msg="Welcome"/>
   </div>
 </template>
@@ -8,8 +7,6 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import Main from './components/main.vue'
-// import bootstrap from 'bootstrap'
-
 @Component({
   components: {
     Main
@@ -20,12 +17,14 @@ export default class App extends Vue {}
 </script>
 
 <style lang="scss">
+  @import 'assets/variables.scss';
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-weight: 300;
+  color: #000000;
 }
 </style>
