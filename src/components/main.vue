@@ -118,7 +118,6 @@ import HeaderComp from './header.vue'
 import FeaturesComp from './features.vue'
 import AboutComp from './aboutComp.vue'
 import WorksComp from './worksComp.vue'
-// import WorksItem from './worksItem.vue'
 import PriceItem from './priceItem.vue'
 import CommentCard from './commentCard.vue'
 // import Carousel from './carousel.vue'
@@ -129,7 +128,6 @@ import CommentCard from './commentCard.vue'
     FeaturesComp,
     AboutComp,
     WorksComp,
-    // WorksItem,
     PriceItem,
     CommentCard
     // Carousel
@@ -144,10 +142,6 @@ export default class Main extends Vue {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
    @import '../assets/variables.scss';
-
-  section.works{
-    background-color: $lightBackgroundColor;
-  }
 
   section.comments .img{
     height: 445px;
