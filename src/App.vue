@@ -25,6 +25,8 @@ export default class App extends Vue {}
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
   color: #000000;
 }
 </style>

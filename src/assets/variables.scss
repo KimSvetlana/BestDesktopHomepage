@@ -3,7 +3,12 @@ $lightBackgroundColor: #F5FCFD;
 $darkBackgroundColor: #0063DD;
 
 
-h2{
+.bannerH1{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+}
+.bannerH2{
     font-size: 32px;
     line-height: 40px;
 }
