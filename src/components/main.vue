@@ -1,159 +1,142 @@
 <template>
-<div class='main-container'>
-  <Header/>
-
-  <section class='features'>
-    <div class="row align-items-center">
-      <div class="col">
-        <img src='../assets/images/Icon1.png' class='item-img' />
-        <FeaturesItem itemHeader="Analysis"/>
+  <div class='main-container' id='main'>
+    <HeaderComp/>
+    <FeaturesComp/>
+    <section class='about'>
+      <div class='row'>
+          <div class="col">
+            <img src="../assets/images/Screen1.png" alt=""/>
+          </div>
+          <div class="col">
+            <h2>Easy Messaging</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="">Read More</a>
+          </div>
       </div>
-      <div class="col">
-        <img src='../assets/images/Icon2.png' class='item-img' />
-        <FeaturesItem itemHeader="Clean Design"/>
-      </div>
-      <div class="col">
-        <img src='../assets/images/Icon3.png' class='item-img' />
-        <FeaturesItem itemHeader="Messaging" />
-      </div>
-    </div>
-  </section>
-
-  <section class='about'>
-    <div class='row'>
+      <div class='row'>
         <div class="col">
-          <img src="../assets/images/Screen1.png" alt="">
-        </div>
-        <div class="col">
-          <h2>Easy Messaging</h2>
+          <h2>Keep In Touch</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <a href="">Read More</a>
         </div>
-    </div>
-    <div class='row'>
-      <div class="col">
-        <h2>Keep In Touch</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-         <a href="">Read More</a>
+        <div class="col">
+          <img src="../assets/images/Screen2.png" alt=""/>
+        </div>
       </div>
-      <div class="col">
-        <img src="../assets/images/Screen2.png" alt="">
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class='works'>
-    <h2>How Does It Works?</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
-    <div class='row'>
-      <div class="col">
-        <img src="../assets/images/Icon4.png" alt="">
-        <WorksItem itemHeader="Create An Account"/>
+    <!-- <section class='works'>
+      <h2>How Does It Works?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
+      <div class='row'>
+        <div class="col">
+          <img src="../assets/images/Icon4.png" alt="">
+          <WorksItem itemHeader="Create An Account"/>
+        </div>
+        <div class="col">
+          <img src="../assets/images/Icon5.png" alt="">
+          <WorksItem itemHeader="Confirm Email"/>
+        </div>
+        <div class="col">
+          <img src="../assets/images/Icon6.png" alt="">
+          <WorksItem itemHeader="See Results"/>
+        </div>
       </div>
-      <div class="col">
-        <img src="../assets/images/Icon5.png" alt="">
-        <WorksItem itemHeader="Confirm Email"/>
-      </div>
-      <div class="col">
-        <img src="../assets/images/Icon6.png" alt="">
-        <WorksItem itemHeader="See Results"/>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="price">
-    <div class='row'>
-      <div class="col">
-        <h2>Pricing Plan</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
-        <button class='btn'>Monthly</button>
-        <button class='btn'>Yearly</button>
+    <section class="price">
+      <div class='row'>
+        <div class="col">
+          <h2>Pricing Plan</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
+          <button class='btn'>Monthly</button>
+          <button class='btn'>Yearly</button>
+        </div>
+        <div class="col">
+          <img src="../assets/images/Icon7.png" alt="">
+          <PriceItem priceHeader="Premium" itemCost="49.00"/>
+        </div>
+        <div class="col">
+          <img src="../assets/images/Icon8.png" alt="">
+          <PriceItem priceHeader="Standart" itemCost="19.00"/>
+        </div>
       </div>
-      <div class="col">
-        <img src="../assets/images/Icon7.png" alt="">
-        <PriceItem priceHeader="Premium" itemCost="49.00"/>
-      </div>
-      <div class="col">
-         <img src="../assets/images/Icon8.png" alt="">
-        <PriceItem priceHeader="Standart" itemCost="19.00"/>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class='comments'>
-    <div class='row'>
-      <div class="col img"></div>
-      <div class="col carousel">
-        <h2>Trusted By More Than 55M Peoples</h2>
-        <CommentCard />
+    <section class='comments'>
+      <div class='row'>
+        <div class="col img"></div>
+        <div class="col carousel">
+          <h2>Trusted By More Than 55M Peoples</h2>
+          <CommentCard />
 
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class='free-trial'>
-    <div class='row'>
-      <div class= "col">
-        <h2>Try 30 Days Free Trial</h2>
-        <p>No credit card reauired</p>
+    <section class='free-trial'>
+      <div class='row'>
+        <div class= "col">
+          <h2>Try 30 Days Free Trial</h2>
+          <p>No credit card reauired</p>
+        </div>
+        <div class= "col">
+          <button class="btn free-trial-btn">Get Stared
+            <img src="../assets/images/ArrowLeft.svg"/>
+          </button>
+        </div>
       </div>
-      <div class= "col">
-        <button class="btn free-trial-btn">Get Stared
-          <img src="../assets/images/ArrowLeft.svg"/>
-        </button>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section  class='subscribe'>
-    <h2 class='logo'>AppSon</h2>
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Enter your Email" aria-label="Subscribe" aria-describedby="button-addon2">
-      <button class="btn btn-outline-secondary btn-subscribe" type="button" id="button-addon2">Subscribe</button>
-    </div>
-  </section>
+    <section  class='subscribe'>
+      <h2 class='logo'>AppSon</h2>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Enter your Email" aria-label="Subscribe" aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary btn-subscribe" type="button" id="button-addon2">Subscribe</button>
+      </div>
+    </section> -->
 
-  <footer>
-    <div class='row'>
-      <div class='col copiraight'>
-        <p>© 2018 Copyright, All Rights Reserved by AppSon</p>
+    <footer>
+      <div class='row'>
+        <div class='col copiraight'>
+          <p>© 2018 Copyright, All Rights Reserved by AppSon</p>
+        </div>
+        <div class='col'>
+          <nav class="nav justify-content-end">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </nav>
+        </div>
+        <div class='col'>
+          <ul class='footer-social-list'>
+                  <li>
+                      <a href="#">
+                          <img src="../assets/images/Facebook.svg"  width="30" height="30">
+                      </a>
+                  </li>
+            <li>
+                      <a href="#">
+                        <img src="../assets/images/Twitter.svg"  width="30" height="30">
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="../assets/images/YouTube.svg" alt="Equiteez" width="30" height="30">
+                      </a>
+                  </li>
+          </ul>
+        </div>
       </div>
-      <div class='col'>
-        <nav class="nav justify-content-end">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-          <a class="nav-link" href="#">Link</a>
-          <a class="nav-link" href="#">Link</a>
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </nav>
-      </div>
-      <div class='col'>
-        <ul class='footer-social-list'>
-                <li>
-                    <a href="#">
-                        <img src="../assets/images/Facebook.svg"  width="30" height="30">
-                    </a>
-                </li>
-          <li>
-                    <a href="#">
-                      <img src="../assets/images/Twitter.svg"  width="30" height="30">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="../assets/images/YouTube.svg" alt="Equiteez" width="30" height="30">
-                    </a>
-                </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-</div>
+    </footer>
+  </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import Header from './header.vue'
-import FeaturesItem from './featuresItem.vue'
+import FeaturesComp from './features.vue'
+import HeaderComp from './header.vue'
 import WorksItem from './worksItem.vue'
 import PriceItem from './priceItem.vue'
 import CommentCard from './commentCard.vue'
@@ -161,16 +144,15 @@ import CommentCard from './commentCard.vue'
 
 @Component({
   components: {
-    Header,
-    FeaturesItem,
+    HeaderComp,
     WorksItem,
     PriceItem,
-    CommentCard
+    CommentCard,
+    FeaturesComp
     // Carousel
   }
 
 })
-
 export default class Main extends Vue {
   // @Prop() private msg!: string;
 }
@@ -179,10 +161,6 @@ export default class Main extends Vue {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
    @import '../assets/variables.scss';
-
-  .features {
-    background-color: $lightBackgroundColor ;
-  }
 
   section.works{
     background-color: $lightBackgroundColor;

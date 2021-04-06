@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header class="header-comp" id="header-comp">
         <b-navbar toggleable="lg" variant="info" class="container">
             <b-navbar-brand href="#">AppSon</b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -14,30 +14,30 @@
                 <button class="btn nav-btn">Sign up</button>
             </b-collapse>
         </b-navbar>
-    <section class="header-content container">
-      <div class="row">
-        <div class="col">
-          <h1 class='header-title bannerH1'>Best Desktop App for You</h1>
-          <p class='header-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>
-           incididunt ut labore et dolore magna aliqua. adipisicing elit, sed do eiusmod tempor <br>
-           incididunt ut labore et dolore magna aliqua.</p>
-          <button class='btn btn-download'>Download</button>
-          <button  class='btn btn-trial'>Free Trial</button>
-          <div class='phones'>
-            <!-- <img src="../assets/images/Phone1.png"/> -->
-            <!-- <img src="../assets/images/Phone2.png"/>
-            <img src="../assets/images/Phone3.png"/> -->
-          </div>
-        </div>
-      </div>
-    </section>
-  </header>
+        <section class="header-content container">
+            <div class="row">
+                <div class="col">
+                    <h1 class='header-title bannerH1'>Best Desktop App for You</h1>
+                    <p class='header-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>
+                    incididunt ut labore et dolore magna aliqua. adipisicing elit, sed do eiusmod tempor <br>
+                    incididunt ut labore et dolore magna aliqua.</p>
+                    <button class='btn btn-download'>Download</button>
+                    <button  class='btn btn-trial'>Free Trial</button>
+                    <div class='phones'></div>
+                </div>
+            </div>
+        </section>
+    </header>
 </template>
 
 <script lang="ts">
-import { Vue } from 'vue-property-decorator'
+import { Vue, Component } from 'vue-property-decorator'
 
-export default class Header extends Vue {
+@Component({
+  components: {
+  }
+})
+export default class HeaderComp extends Vue {
   // @Prop() private msg!: string;
 }
 </script>
