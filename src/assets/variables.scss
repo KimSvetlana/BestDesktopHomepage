@@ -1,6 +1,7 @@
 $backgroundButtonColor:#0F7BFF; 
 $lightBackgroundColor: #F5FCFD;
 $darkBackgroundColor: #0063DD;
+$lifhtButtonColor:rgba(0, 99, 221, 0.15);
 
 
 .bannerH1{
@@ -13,7 +14,7 @@ $darkBackgroundColor: #0063DD;
     line-height: 40px;
 }
 .bannerH3{
-    font-weight: 500;
+    font-weight: bold;
     font-size: 18px;
     line-height: 22px;
 }

@@ -4,6 +4,7 @@
     <FeaturesComp/>
     <AboutComp/>
     <WorksComp/>
+    <PriceComp/>
     <!-- <section class='works'>
       <h2>How Does It Works?</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
@@ -118,7 +119,7 @@ import HeaderComp from './header.vue'
 import FeaturesComp from './features.vue'
 import AboutComp from './aboutComp.vue'
 import WorksComp from './worksComp.vue'
-import PriceItem from './priceItem.vue'
+import PriceComp from './priceComp.vue'
 import CommentCard from './commentCard.vue'
 // import Carousel from './carousel.vue'
 
@@ -128,7 +129,7 @@ import CommentCard from './commentCard.vue'
     FeaturesComp,
     AboutComp,
     WorksComp,
-    PriceItem,
+    PriceComp,
     CommentCard
     // Carousel
   }
