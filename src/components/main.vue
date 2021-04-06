@@ -2,29 +2,8 @@
   <div class='main-container' id='main'>
     <HeaderComp/>
     <FeaturesComp/>
-    <section class='about'>
-      <div class='row'>
-          <div class="col">
-            <img src="../assets/images/Screen1.png" alt=""/>
-          </div>
-          <div class="col">
-            <h2>Easy Messaging</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="">Read More</a>
-          </div>
-      </div>
-      <div class='row'>
-        <div class="col">
-          <h2>Keep In Touch</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="">Read More</a>
-        </div>
-        <div class="col">
-          <img src="../assets/images/Screen2.png" alt=""/>
-        </div>
-      </div>
-    </section>
-
+    <AboutComp/>
+    <WorksComp/>
     <!-- <section class='works'>
       <h2>How Does It Works?</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
@@ -135,9 +114,11 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import FeaturesComp from './features.vue'
 import HeaderComp from './header.vue'
-import WorksItem from './worksItem.vue'
+import FeaturesComp from './features.vue'
+import AboutComp from './aboutComp.vue'
+import WorksComp from './worksComp.vue'
+// import WorksItem from './worksItem.vue'
 import PriceItem from './priceItem.vue'
 import CommentCard from './commentCard.vue'
 // import Carousel from './carousel.vue'
@@ -145,10 +126,12 @@ import CommentCard from './commentCard.vue'
 @Component({
   components: {
     HeaderComp,
-    WorksItem,
+    FeaturesComp,
+    AboutComp,
+    WorksComp,
+    // WorksItem,
     PriceItem,
-    CommentCard,
-    FeaturesComp
+    CommentCard
     // Carousel
   }
 

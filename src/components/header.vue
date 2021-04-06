@@ -37,15 +37,12 @@ import { Vue, Component } from 'vue-property-decorator'
   components: {
   }
 })
-export default class HeaderComp extends Vue {
-  // @Prop() private msg!: string;
-}
+export default class HeaderComp extends Vue {}
 </script>
 
 <style lang="scss">
     @import '../assets/variables.scss';
     header{
-        // min-height: 1029px;
         background: url('../assets/images/headerBackground.png');
         background-position: center;
         box-shadow: -7px -7px 32px rgba(0, 30, 67, 0.06);
