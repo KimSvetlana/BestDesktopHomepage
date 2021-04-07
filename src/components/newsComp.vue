@@ -3,14 +3,14 @@
         <h2 class='bannerH2'>Latest News From Us</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore<br>
          et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
-        <div class='row'>
-            <div class="col text-start">
+        <div class='row paddingRow'>
+            <div class="col big-news text-start">
                 <img src='../assets/images/image6.png'/>
                 <h3 class="news-title">The master bedroom suite is phenomenally spacious</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <a href="" class='news-link'>Continue Reading <img src="../assets/images/ArrowLeft2.svg" alt=""></a>
             </div>
-            <div class="col">
+            <div class="col text-start">
                 <div class='news-card'>
                     <img src="../assets/images/image9.png" alt="">
                     <h3 class='new-card-title'>The master bedroom suite is phenomeny spacious</h3>
@@ -45,11 +45,31 @@ export default class NewsComp extends Vue {}
     @import '../assets/variables.scss';
     section.news-comp{
         padding-top: 130px;
+        padding-bottom: 106px;
     }
     .news-comp h2{
         font-weight: bold;
+        margin-bottom: 25px;
+        & ~ p {
+            margin-bottom: 47px;
+        }
+    }
+    .news-comp .big-news{
+        padding-left: 20px;
+        & h3{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 150%;
+            color: $darkBackgroundColor;
+            margin-top:30px;
+            margin-bottom: 25px;
+        }
+        & p{
+            margin-bottom: 35px;
+        }
     }
     .news-link{
+        margin-top:35px;
         color:$darkBackgroundColor;
         text-decoration: none;
         font-weight: bold;
@@ -61,10 +81,12 @@ export default class NewsComp extends Vue {}
         font-size: 18px;
         font-weight: 500;
         line-height: 27px;
+        margin-bottom: 20px;
     }
     .news-card{
         position: relative;
         padding-left: 200px;
+        margin-bottom: 35px;
 
         & img{
             position: absolute;

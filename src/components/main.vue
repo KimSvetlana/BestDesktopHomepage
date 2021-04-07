@@ -63,7 +63,7 @@ export default class Main extends Vue {}
     background: $lightBackgroundColor;
   }
   section.comments .img{
-    height: 445px;
+    height: 601px;
     background: url('../assets/images/Image.png') no-repeat;
     background-size: cover;
   }

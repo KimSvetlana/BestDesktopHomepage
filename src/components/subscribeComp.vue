@@ -23,15 +23,17 @@ export default class SubscribeComp extends Vue {}
     @import '../assets/variables.scss';
 
     section.subscribe{
-        padding: 119px 0;
+        padding-top: 119px;
+        padding-bottom: 100px;
         background-color: $backgroundButtonColor;
     }
     .logo.bannerH1{
         color:white;
-        margin-bottom: 30px;
+        margin-bottom: 27px;
     }
     .subscribe input {
         max-width: 392px;
+        height: 50px;
         background-color: $darkBackgroundColor;
         border:none;
         border-radius: 25px 0 0 25px;
@@ -41,6 +43,7 @@ export default class SubscribeComp extends Vue {}
     }
     .subscribe .btn-subscribe{
         width: 166px;
+        height: 50px;
         color:$darkBackgroundColor;
         text-transform: uppercase;
         font-weight: bold;
@@ -52,5 +55,17 @@ export default class SubscribeComp extends Vue {}
         &:hover{
             background-color: $darkBackgroundColor;
         }
+    }
+    @media screen and (min-width:280px) and (max-width: 680px){
+       .subscribe .input-group input{
+            width:100%;
+            border-top-right-radius: 25px !important;
+           border-bottom-right-radius: 25px !important;
+        }
+       .subscribe .input-group > button.btn-subscribe{
+           margin-top: 20px;
+           border-top-left-radius: 25px !important;
+           border-bottom-left-radius: 25px !important;
+       }
     }
 </style>

@@ -20,6 +20,7 @@ export default class App extends Vue {}
   @import 'assets/variables.scss';
   @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
 #app {
+  overflow: hidden;
   font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

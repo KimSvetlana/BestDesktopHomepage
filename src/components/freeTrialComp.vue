@@ -1,12 +1,12 @@
 <template>
      <section class='free-trial'>
         <div class="container">
-          <div class='row'>
-            <div class= "col">
+          <div class='row paddingRow'>
+            <div class= "col text-start">
               <h2 class="bannerH2">Try 30 Days Free Trial</h2>
               <p>No credit card reauired</p>
             </div>
-            <div class= "col">
+            <div class= "col align-self-center">
               <button class="btn free-trial-btn">Get Stared
                 <img src="../assets/images/ArrowLeft.svg"/>
               </button>
@@ -29,12 +29,19 @@ export default class FreeTrialComp extends Vue {}
  @import '../assets/variables.scss';
 
   section.free-trial{
-    padding-top: 133px;
-    padding-bottom: 113px;
+    padding-top: 135px;
+    padding-bottom: 100px;
     background-color: $lightBackgroundColor;
+  }
+  .free-trial .col:first-child{
+    padding-left: 220px;
+  }
+  .free-trial .col:last-child{
+    padding-right: 150px;
   }
   .free-trial h2{
     font-weight: bold;
+    margin-bottom: 25px;
   }
   button.free-trial-btn{
     box-sizing: border-box;
@@ -49,4 +56,18 @@ export default class FreeTrialComp extends Vue {}
       color: $backgroundButtonColor;
     }
   }
+   @media (max-width: 1199px){
+      .free-trial .col:first-child{
+        padding-left: 20px;
+      }
+    .free-trial .col:last-child{
+      padding-right: 20px;
+    }
+   }
+    @media screen and (min-width:280px) and (max-width: 680px){
+      .free-trial .col{
+        flex:auto;
+        text-align: center !important;
+      }
+    }
 </style>

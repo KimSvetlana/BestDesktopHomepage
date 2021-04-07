@@ -4,7 +4,7 @@
             <h2 class="bannerH2">How Does It Works?</h2>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore<br>
                 et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
-            <div class='row'>
+            <div class='row paddingRow'>
             <div class="col works-item">
                 <img src="../assets/images/Icon4.png" alt="">
                 <h3 class="bannerH3">Create An Account</h3>
@@ -39,8 +39,8 @@ export default class WorksComp extends Vue {}
 
     section.works-comp{
         background-color: $lightBackgroundColor;
-        padding-top: 119px;
-        padding-bottom: 137px;
+        padding-top: 122px;
+        padding-bottom: 120px;
     }
     .works-comp h2{
         margin-bottom: 25px;

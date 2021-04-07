@@ -44,7 +44,7 @@ export default class HeaderComp extends Vue {}
     @import '../assets/variables.scss';
     header{
         background: url('../assets/images/headerBackground.png');
-        background-position: center;
+        background-position: top 0px left 0px;
         box-shadow: -7px -7px 32px rgba(0, 30, 67, 0.06);
     }
     header .navbar{
@@ -58,6 +58,7 @@ export default class HeaderComp extends Vue {}
         display: block;
         width: 179px;
         height: 100px;
+        padding-top: 25px;
         color: white;
         background-color: $backgroundButtonColor;
         border-radius: 0px 0px 21.5px 21.5px;
@@ -67,6 +68,7 @@ export default class HeaderComp extends Vue {}
     }
 
     .navbar-nav .nav-item {
+        margin-left: 25px;
         font-weight: 500;
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.55);
@@ -102,6 +104,9 @@ export default class HeaderComp extends Vue {}
         padding-top: 88px;
     }
     .header-text{
+        margin-top: 30px;
+        margin-bottom: 33px;
+        font-weight: 400;
         line-height: 169%;
         color: #929292;
     }
@@ -147,6 +152,15 @@ export default class HeaderComp extends Vue {}
         div.phones{
             width: 312px;
             background: url('../assets/images/Phone2.png') top -40px left 50% no-repeat,
+        }
+    }
+    @media screen and (max-width: 385px){
+        header .btn-download {
+            margin-right: 0px;
+        }
+        header .btn-download,
+        header .btn-trial{
+            margin-bottom: 20px;
         }
     }
 </style>

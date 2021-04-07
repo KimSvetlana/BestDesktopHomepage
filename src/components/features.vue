@@ -1,7 +1,7 @@
 <template>
     <section class="features-comp" id="features-comp">
         <div class ='container'>
-            <div class="row">
+            <div class="row paddingRow">
                 <div class='col-sm'>
                     <div class='features-item'>
                         <img src='../assets/images/Icon1.png' class='item-img' />
@@ -47,8 +47,9 @@ export default class FeaturesComp extends Vue {}
     }
 
     .features-item{
-        padding: 40px 14px;
         box-sizing: border-box;
+        margin: 0 auto;
+        padding: 40px 14px;
         width: 362px;
         height: 290px;
         background: #FFFFFF;
@@ -61,6 +62,9 @@ export default class FeaturesComp extends Vue {}
 
         & h3{
             margin-bottom: 25px;
+        }
+        & p{
+            line-height: 20px;
         }
         &.shift{
             position: relative;

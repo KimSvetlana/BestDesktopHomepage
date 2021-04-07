@@ -1,6 +1,6 @@
 <template>
     <section class="container price">
-        <div class='row'>
+        <div class='row paddingRow'>
             <div class="col price-title text-start">
                 <h2 class='bannerH2'>Pricing Plan</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
@@ -59,6 +59,15 @@ export default class PriceComp extends Vue {}
     }
     .col.price-title{
         margin: auto;
+        padding-left: 30px;
+        margin-right: 35px;
+        & h2{
+            margin-bottom: 30px;
+        }
+        & p{
+            margin-bottom: 40px;
+            line-height: 24px;
+        }
     }
     .price-item{
         box-sizing: border-box;
@@ -72,19 +81,23 @@ export default class PriceComp extends Vue {}
         & img{
             margin-bottom: 20px;
         }
-
+        & h3{
+            margin-bottom: 25px;
+        }
         & p{
             line-height: 29px;
+            margin-bottom: 40px;
         }
+
         & hr{
             margin-bottom: 23px;
         }
         & .item-cost {
             color:$backgroundButtonColor;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 32px;
             line-height: 22px;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
     }
     .premium button{
@@ -123,7 +136,7 @@ export default class PriceComp extends Vue {}
         &:hover{
             color:$backgroundButtonColor;
             background-color: $lifhtButtonColor;
-            border:2px solid $backgroundButtonColor;
+            border:3px solid $backgroundButtonColor;
         }
     }
 
@@ -132,14 +145,21 @@ export default class PriceComp extends Vue {}
         width: 166px;
         height: 50px;
         color:$backgroundButtonColor;
-        border:2px solid $backgroundButtonColor;
+        border:3px solid $backgroundButtonColor;
         border-radius: 0 25px 25px 0;
         &:hover{
             color:white;
             background: $lifhtButtonColor;
         }
     }
-    @media screen and (max-width: 1199px) {
+    .col .standart{
+        margin-right: 20px;
+    }
+    @media screen and (max-width: 1399px) {
+        .col.price-title{
+            padding-left: 0px;
+            margin-right: 0px;
+        }
         button.monthly,
         button.yearly{
             width:100px;
@@ -147,6 +167,24 @@ export default class PriceComp extends Vue {}
         .price-item{
             width: 332px;
             height: 506px;
+            padding: 20px 15px;
+           & img{
+                margin-bottom: 10px;
+            }
+            & h3{
+                margin-bottom: 15px;
+            }
+            & p{
+                margin-bottom: 20px;
+            }
+
+            & hr{
+                margin-bottom: 13px;
+            }
+            & .item-cost {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
         }
     }
     @media screen and (max-width: 921px) {
@@ -154,9 +192,13 @@ export default class PriceComp extends Vue {}
             flex: auto;
             text-align: center !important;
         }
+        .col .standart{
+            margin-right: auto;
+        }
         .price-item{
             margin: 0 auto;
             margin-top: 20px;
         }
     }
+
 </style>
