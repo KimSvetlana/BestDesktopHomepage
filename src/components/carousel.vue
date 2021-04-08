@@ -82,4 +82,12 @@ export default class Carousel extends Vue {}
   #comments-carousel .carousel-slide {
     flex-wrap: nowrap !important;
   }
+  @media screen and (min-width: 375px) and (max-width: 540px) {
+     #comments-carousel .carousel-slide{
+        flex-wrap: wrap !important;
+      }
+      #comments-carousel .carousel-item{
+        height: 220px;
+      }
+  }
 </style>
