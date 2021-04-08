@@ -50,8 +50,7 @@ export default class FeaturesComp extends Vue {}
         box-sizing: border-box;
         margin: 0 auto;
         padding: 40px 14px;
-        width: 362px;
-        height: 290px;
+        padding-bottom: 30px;
         background: #FFFFFF;
         box-shadow: 0px 4px 16px rgba(0, 66, 148, 0.08);
         border-radius: 5px;

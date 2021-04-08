@@ -43,9 +43,10 @@ export default class HeaderComp extends Vue {}
 <style lang="scss">
     @import '../assets/variables.scss';
     header{
-        background: url('../assets/images/headerBackground.png');
+        background: url('../assets/images/headerBackground.png') no-repeat;
         background-position: top 0px left 0px;
         box-shadow: -7px -7px 32px rgba(0, 30, 67, 0.06);
+        background-size: cover;
     }
     header .navbar{
         padding: 0;
@@ -161,6 +162,12 @@ export default class HeaderComp extends Vue {}
         header .btn-download,
         header .btn-trial{
             margin-bottom: 20px;
+        }
+    }
+    @media screen and (min-width: 375px) and (max-width:1919px){
+        header{
+            background: url('../assets/images/headerBackground.png') no-repeat;
+            background-position: top 25px left 0px;
         }
     }
 </style>
