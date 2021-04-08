@@ -5,7 +5,7 @@
          et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
         <div class='row paddingRow'>
             <div class="col big-news text-start">
-                <img src='../assets/images/image6.png'/>
+                <img class='big-news-img' src='../assets/images/image6.png'/>
                 <h3 class="news-title">The master bedroom suite is phenomenally spacious</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <a href="" class='news-link'>Continue Reading <img src="../assets/images/ArrowLeft2.svg" alt=""></a>
@@ -92,6 +92,18 @@ export default class NewsComp extends Vue {}
             position: absolute;
             top:0;
             left:0;
+        }
+    }
+    @media screen and (min-width: 375px) and (max-width: 515px) {
+        section.news-comp{
+            padding-top: 50px;
+            padding-bottom: 46px;
+        }
+        .big-news{
+            margin-bottom: 20px;
+        }
+        .big-news-img{
+            width: 100%;
         }
     }
 </style>
