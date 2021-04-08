@@ -1,38 +1,85 @@
 <template>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<div class="comments-carousel">
+    <b-carousel
+      id="comments-carousel"
+      controls
+      indicators
+    >
+    <!-- Slide with blank fluid image to maintain slide aspect ratio -->
+      <b-carousel-slide img-blank img-width="1024" img-height="480">
+        <div class='row carousel-slide'>
+          <div class='col'><CommentCard/></div>
+          <div class='col'><CommentCard/></div>
+          <div class='col'><CommentCard/></div>
+        </div>
+      </b-carousel-slide>
+      <b-carousel-slide img-blank img-width="1024" img-height="480">
+        <div class='row carousel-slide'>
+          <div class='col'><CommentCard/></div>
+          <div class='col'><CommentCard/></div>
+          <div class='col'><CommentCard/></div>
+        </div>
+      </b-carousel-slide>
+      <b-carousel-slide img-blank img-width="1024" img-height="480">
+        <div class='row carousel-slide'>
+          <div class='col'><CommentCard/></div>
+          <div class='col'><CommentCard/></div>
+          <div class='col'><CommentCard/></div>
+        </div>
+      </b-carousel-slide>
+    </b-carousel>
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator'
+import CommentCard from './commentCard.vue'
 
-@Component
-export default class Carousel extends Vue {
-        @Prop() private priceHeader!: string;
-        @Prop() private itemCost!: string;
-}
+@Component({
+  components: {
+    CommentCard
+  }
+})
+export default class Carousel extends Vue {}
 </script>
+<style lang="scss">
+.comments-carousel .carousel-control-next,
+.comments-carousel .carousel-control-prev{
+  display: none;
+}
+.comments-carousel .carousel-indicators{
+  height: 20px;
+  top: 275px;
+  justify-content: start;
+  margin-left: auto;
+}
+.carousel-indicators::before{
+  content:"";
+  width: 40px;
+  height: 12px;
+  border-radius: 6px;
+  background-color:#0063DD;
+}
+.comments-carousel .carousel-indicators li{
+  width:12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1.6px solid #0063DD;
+  margin-left: 8px;
+  &:active{
+    background-color: #0063DD;
+    border-color:#0063DD; ;
+  }
+  & .active{
+    background-color: #0063DD;
+  }
+}
+  #comments-carousel .carousel-caption{
+    top: 0%;
+    left: 0%;
+    color:black;
+  }
+  #comments-carousel .carousel-slide {
+    flex-wrap: nowrap !important;
+  }
+</style>
