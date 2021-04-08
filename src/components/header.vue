@@ -24,6 +24,7 @@
                     <button class='btn btn-download'>Download</button>
                     <button  class='btn btn-trial'>Free Trial</button>
                     <div class='phones'></div>
+                    <a class="header-scrol-down" href="#footer"><img src='../assets/images/ScrolDown.png'/></a>
                 </div>
             </div>
         </section>
@@ -102,6 +103,7 @@ export default class HeaderComp extends Vue {}
     }
 
     .header-content{
+        position: relative;
         padding-top: 88px;
     }
     .header-text{
@@ -149,10 +151,18 @@ export default class HeaderComp extends Vue {}
          url('../assets/images/Phone3.png') top 50px left 105% no-repeat;
     }
 
+    .header-scrol-down{
+        position: absolute;
+        bottom: -55px;
+        left: 46.5%;
+    }
     @media screen and (max-width: 921px) {
         div.phones{
             width: 312px;
             background: url('../assets/images/Phone2.png') top -40px left 50% no-repeat,
+        }
+         .header-scrol-down{
+            left: 42.5%;
         }
     }
     @media screen and (max-width: 385px){
