@@ -187,6 +187,12 @@ export default class PriceComp extends Vue {}
             }
         }
     }
+    // @media screen and (min-width: 922px) and (max-width: 991px) {
+    //     .price-item .standart{
+    //         margin: 0 auto;
+    //         margin-top: 30px;
+    //     }
+    // }
     @media screen and (max-width: 921px) {
         .price .col{
             flex: auto;
@@ -198,6 +204,14 @@ export default class PriceComp extends Vue {}
         .price-item{
             margin: 0 auto;
             margin-top: 20px;
+        }
+    }
+    @media screen and (min-width: 375px) and (max-width:580px) {
+        section.price {
+            padding: 40px 0;
+        }
+        .price .price-title{
+            padding: 0 15px;
         }
     }
 
